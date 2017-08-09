@@ -1,0 +1,26 @@
+---
+    - name: Install apache, mod_ssl, wget, vim
+      yum: pkg={{ item }} state=present
+      with_items:
+      - vim-enhanced
+      - httpd
+      - mod_ssl
+      - wget
+
+    - name: Create download directory
+      file: path={{ download_dir }} state=directory
+
+    - name: Create secure directory
+      file: path=/var/www/html/secure state=directory
+
+    - name: Download java
+      command: 'wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz -O {{ download_dir }}/jdk-8u131-linux-x64.tar.gz'
+
+    - name: Download JCE
+      command: 'wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jce/8/jce_policy-8.zip -O {{ download_dir }}/jce_policy-8.zip'
+
+    - name: Create profile.d files
+      template: src=profile.d/{{ item.src }} dest=/etc/profile.d/{{ item.dest }}
+      with_items:
+        - { src: 'java.sh.j2', dest: 'java.sh' }
+        - { src: 'maven.sh.j2', dest: 'maven.sh' }

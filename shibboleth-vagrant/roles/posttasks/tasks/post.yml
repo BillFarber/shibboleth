@@ -1,0 +1,11 @@
+---
+- name: Change directory ownerships
+  file:
+    path: "{{ item }}"
+    owner: "{{ tomcat_unixuser }}"
+    group: "{{ tomcat_unixgroup }}"
+    recurse: yes
+  with_items:
+    - "{{ shib_installdir }}/shibboleth-idp"
+    - "{{ java_installdir }}/jdk{{ java_version }}"
+    - "{{ tomcat_installdir }}/apache-tomcat-{{ tomcat_version }}"
