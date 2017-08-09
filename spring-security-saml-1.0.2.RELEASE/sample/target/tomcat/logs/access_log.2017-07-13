@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:22:16:47 -0400] "GET /spring-security-saml2-sample/saml/login HTTP/1.1" 302 - http-bio-8080-exec-1 65
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:22:16:47 -0400] "GET /spring-security-saml2-sample/saml/discovery?entityID=org.billfarber.com%2Fsaml%2Fsample%2FentityId&returnIDParam=idp HTTP/1.1" 200 5653 http-bio-8080-exec-2 78
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:22:16:51 -0400] "GET /spring-security-saml2-sample/saml/login?idp=https%3A%2F%2Fvagrant.local%2Fidp%2Fshibboleth HTTP/1.1" 200 4701 http-bio-8080-exec-3 71
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:22:17:32 -0400] "GET /spring-security-saml2-sample/saml/login?idp=https%3A%2F%2Fvagrant.local%2Fidp%2Fshibboleth HTTP/1.1" 200 4701 http-bio-8080-exec-4 22
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:22:17:36 -0400] "GET /spring-security-saml2-sample/saml/login HTTP/1.1" 302 - http-bio-8080-exec-5 2
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:22:17:36 -0400] "GET /spring-security-saml2-sample/saml/discovery?entityID=org.billfarber.com%2Fsaml%2Fsample%2FentityId&returnIDParam=idp HTTP/1.1" 200 5653 http-bio-8080-exec-7 4
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:22:17:38 -0400] "GET /spring-security-saml2-sample/saml/login?idp=https%3A%2F%2Fvagrant.local%2Fidp%2Fshibboleth HTTP/1.1" 200 4701 http-bio-8080-exec-8 13
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:21:35 -0400] "GET /spring-security-saml2-sample/saml/login HTTP/1.1" 302 - http-bio-8080-exec-10 6
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:21:35 -0400] "GET /spring-security-saml2-sample/saml/discovery?entityID=org.billfarber.com%2Fsaml%2Fsample%2FentityId&returnIDParam=idp HTTP/1.1" 200 5653 http-bio-8080-exec-10 8
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:21:37 -0400] "GET /spring-security-saml2-sample/saml/login?idp=https%3A%2F%2Fvagrant.local%2Fidp%2Fshibboleth HTTP/1.1" 200 4697 http-bio-8080-exec-10 16
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:22:17 -0400] "POST /spring-security-saml2-sample/saml/SSO HTTP/1.1" 200 9757 http-bio-8080-exec-10 223
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:22:22 -0400] "GET /spring-security-saml2-sample/saml/web/metadata HTTP/1.1" 302 - http-bio-8080-exec-10 7
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:22:22 -0400] "GET /spring-security-saml2-sample/saml/web/metadata/login HTTP/1.1" 200 6185 http-bio-8080-exec-10 34
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:22:24 -0400] "POST /spring-security-saml2-sample/saml/web/login HTTP/1.1" 302 - http-bio-8080-exec-10 4
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:22:24 -0400] "GET /spring-security-saml2-sample/saml/web/metadata HTTP/1.1" 200 8050 http-bio-8080-exec-10 24
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:22:30 -0400] "GET /spring-security-saml2-sample/saml/web/metadata/provider?providerIndex=0 HTTP/1.1" 200 5750 http-bio-8080-exec-10 714
+0:0:0:0:0:0:0:1 - - [13/Jul/2017:23:22:34 -0400] "GET /spring-security-saml2-sample/saml/web/metadata HTTP/1.1" 200 8050 http-bio-8080-exec-10 3
